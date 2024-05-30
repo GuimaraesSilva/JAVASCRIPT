@@ -321,3 +321,138 @@
 //   asyncNome("javascript");
 
 // <-------------------------------------------->
+// Exercicio DOM
+
+// const buttonTags = document.getElementsByTagName("button");
+// console.log(buttonTags);
+
+// const buttonTags2 = document.querySelectorAll("button");
+// console.log(buttonTags2);
+
+// const containerButtons = document.querySelectorAll(".container button");
+// console.log(containerButtons);
+
+// const idTeste = document.getElementById("teste");
+// console.log(idTeste);
+
+// <-------------------------------------------->
+// Exercicio DOM - ATRIBUTES
+
+// const newDiv = document.createElement("div");
+// document.body.appendChild(newDiv);
+
+// newDiv.prepend("isto é apenas um exercício");
+// newDiv.append("muito dificil");
+
+// newDiv.setAttribute("aria-label","test-test");
+
+// <-------------------------------------------->
+// Exercicio DOM - EVENTS PSEUDO EVENTS
+
+// const buttons = document.querySelectorAll('button');
+
+// buttons[0].onmouseover = () => console.log("Game Over!");
+// buttons[1].onmouseover = () => console.log("Game Over!");
+
+// buttons[0].addEventListener('mouseout', () => console.log("Game Out!"));
+// buttons[1].addEventListener('mouseout', () => console.log("Game Out!"));
+
+// buttons.forEach((button) => (button.onmouseover = () => console.log("Game Over!")));
+
+// setTimeout(() => buttons[0].setAttribute("id", "teste"), 3000);
+
+// <-------------------------------------------->
+// Exercicio OBJECT EVENT
+
+// function captureEvent (event) {
+//     console.log(event);
+//     if (event.type == 'click'){
+//         event.target.setAttribute('class', 'clicked')
+
+//     }else if (event.type == 'mouseover'){
+//         event.target.setAttribute('class','hover')
+//     }
+// }
+
+// const buttons = document.querySelectorAll('button');
+// buttons[0].addEventListener ('click', captureEvent);
+// buttons[1].addEventListener ('over',captureEvent);
+
+// // OUTRA FORMA DE FAZER O MESMO EXERCICIO
+
+// const captureEvent = (event) => {
+//     console.log(event);
+  
+//     if (event.type === "click") {
+//       event.target.setAttribute("class", "clicked");
+//     } else if (event.type === "mouseover") {
+//       event.target.setAttribute("class", "hover");
+//     }
+//   };
+  
+//   const buttons = document.querySelectorAll("button");
+  
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", captureEvent);
+//     button.addEventListener("mouseover", captureEvent);
+//   });
+
+// <-------------------------------------------->
+// Exercicio sobre FORMDATA
+
+// const form = document.querySelector('#fieldForm');
+
+// form.addEventListener('submit', (event) => {
+//     event.preventDefault();
+
+//     const data = new FormData(event.target);
+
+//     const nome = data.get('name');
+//     const number = data.get('contact');
+//     const mail = data.get('mail');
+
+//     console.log('Name:',`${nome}`);
+//     console.log('Contact:',`${number}`);
+//     console.log('Email:',`${mail}`);
+// })
+
+// <-------------------------------------------->
+// Exercicio sobre DOM - Manipulação de conteudo
+
+// const divAdd = document.createElement('div');
+// divAdd.innerHTML = `
+// <ul>
+//     <li>Exemplo 01</li>
+//     <li>Exemplo02</li>
+// </ul>
+// <p>isto é uma div</p>`;
+
+// document.body.appendChild(divAdd);
+
+// const element = document.querySelector("li");
+// element.insertAdjacentHTML('afterend', '<li>Exemplo 1.5</li>')
+
+// const pRemove = document.querySelector('p');
+// pRemove.remove();
+
+// <-------------------------------------------->
+// Exercicio sobre DOM - Manipulação de classes
+
+// const spanAdd = document.createElement('span');
+// spanAdd.innerHTML = `<span>isto é uma div</span>`;
+
+// document.body.appendChild(spanAdd);
+
+// const fraseAdd = document.querySelector('span')
+// fraseAdd.addEventListener('click', () => 
+// fraseAdd.classList.toggle('clicked'));
+
+
+// const buttonAdd = document.createElement('button');
+// document.body.appendChild(buttonAdd);
+
+// buttonAdd.addEventListener('mouseover', () => 
+// buttonAdd.classList.toggle('over'));
+
+// buttonAdd.addEventListener('mouseout', () => 
+// buttonAdd.classList.toggle('out'));

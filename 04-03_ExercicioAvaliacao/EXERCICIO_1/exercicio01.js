@@ -22,3 +22,4 @@ console.log(product);
 product.cost = "2.5";
 const convertCost = parseInt(product.cost);
 console.log(convertCost);
+
