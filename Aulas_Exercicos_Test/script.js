@@ -456,3 +456,109 @@
 
 // buttonAdd.addEventListener('mouseout', () => 
 // buttonAdd.classList.toggle('out'));
+
+// <-------------------------------------------->
+// Exercicio sobre XMLHTTPREQUEST AJAX (1)
+
+// const request = new XMLHttpRequest();
+// request.open('GET','https://dog.ceo/api/breeds/list/all');
+// request.send();
+
+// <-------------------------------------------->
+// Exercicio sobre XMLHTTPREQUEST AJAX (2)
+
+// const loadAnimesFiltered = (yearParam) => {
+//   const promise = new Promise((resolve, reject) => {
+//     const request = new XMLHttpRequest();
+//     request.open("GET", "https://api.jikan.moe/v4/top/anime");
+//     request.responseType = "json";
+//     request.send();
+
+//     request.addEventListener("error", () => reject("errro!"));
+
+//     request.addEventListener("load", () => {
+//       const animesList = request.response.data;
+
+//       const animesFiltered = animesList.filter(
+//         (animeItem) => animeItem.year === yearParam
+//       );
+
+//       resolve(animesFiltered);
+//     });
+//   });
+
+//   return promise;
+// };
+
+// const findAnimeByYear = async (year) => {
+//   const response = await loadAnimesFiltered(year);
+
+//   if (response.length === 0) {
+//     console.log(`O ano ${year} não tem conteúdos.`);
+//   } else {
+//     response.map((animeItem) => console.log(animeItem.title));
+//   }
+// };
+
+// <-------------------------------------------->
+// Exercicio sobre FECTH
+
+// fetch("https://api.jikan.moe/v4/top/anime")
+// // .then((resposta) => resposta.json())
+// // .then((response) => console.log(response.data));
+
+// const loadAnimes = async () => {
+//   const resposta = await fetch("https://api.jikan.moe/v4/top/anime")
+  
+//   const dadosResposta = await resposta.json();
+//   const animesList = dadosResposta.data;
+
+//   const animesFiltered = animesList.filter(
+//     (animeItem) => animeItem.year === yearParam);
+
+//   // console.log(animesFiltered.lenght === 0 ? `o ano ${year} não tem conteudos` : animesFiltered.map((animeItem) => animeItem.title));
+
+//   // Neste caso  podemos utilizar o ternário para facilitar o código 
+//   // ou então utilizamos as condições de if, else.
+
+//   if (response.length === 0) {
+//     console.log(`O ano ${year} não tem conteúdos.`);
+//   } else {
+//     response.map((animeItem) => console.log(animeItem.title));
+//   }
+// };
+
+// <-------------------------------------------->
+// Exercicio sobre Classes 
+
+// class Car {
+//   constructor(marca, modelo) {
+//   this.brand = marca;
+//   this.model = modelo;
+//   }
+//   display() {
+//   return `Este é um ${this.brand} ${this.model}`;
+//   }
+// }
+// const electric = new Car('Tesla', 'Model 3');
+// const gas = new Car('Audi', 'RS6');
+// console.log(electric.display());
+// console.log(gas.display());
+
+// class Suv extends Car{
+//   constructor(marca, modelo, tipo){
+//     super(marca,modelo);
+//     this.type = tipo;
+//   }
+//   getType(){
+//     return this.type;
+//   }
+// }
+
+// const truck = new Suv('Ford','Raptor','4x4');
+// console.log(truck.display());
+// console.log(truck.getType());
+
+// <-------------------------------------------->
+
+
