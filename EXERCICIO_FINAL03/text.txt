@@ -1,0 +1,15 @@
+
+
+Produto
+
+- Criar um ficheiro html com uma tag script;
+- Obter produto com o endpoint https://fakestoreapi.com/products/1:
+    ○ Podem escolher o id do produto que entenderem: vai de 0 a 20;
+    ○ Preencher dinamicamente a página com o máximo de elementos que a api vos fornece.
+    ○ Pontos bónus: obter id do produto através do URL, com query string:
+        ■ Deverás perceber por ti como se obtém o id;
+        ■ Pistas: deverás obter o endereço e depois apenas o número do id.
+- No final da página deverás listar numa grelha produtos relacionados:
+    ○ Deverás listar os 3 primeiros produtos da mesma categoria: https://fakestoreapi.com/products/category/jewelery
+    ○ Obtém o id da categoria a partir do produto.
+- No footer da página deverá ser adicionado o texto “Copyright 2024”, sendo que 2024 deverá ser dinamicamente gerado.

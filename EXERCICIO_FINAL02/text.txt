@@ -1,0 +1,16 @@
+
+
+Ecommerce homepage
+
+- Criar um ficheiro html com uma tag script;
+- Faz load dos dados da API: 'https://fakestoreapi.com/products'
+- Criar dinamicamente uma grelha de produtos, utilizando o nome e imagem dos produtos carregados;
+- Adicionalmente, a cada produto deve ser gerado um botão com o texto “Add to cart”. Este botão deverá ter uma função
+ao ser clicado que adiciona um produto ao carrinho. Para isso usem o endpoint:
+    ○ Enviar para o endpoint https://fakestoreapi.com/carts/7 e o method deverá ser de update (PUT);
+    ○ Deverás enviar para o endpoint os seguintes campos:
+        ■ userId: um número;
+        ■ date: a data actual com o formato 2019-12-10;
+        ■ products: um array de produtos, em que cada produto é um object composto por:
+            ● productId: um número;
+            ● quantity: um número.

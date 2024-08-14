@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Ecommerce Homepage</div>
+        <div class="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+    <div id="cart-container">
+        <h3>Meu Carrinho</h3>
+        <div id="cart-items"></div>
+        <div class="actions">
+            <button id="clear-cart">Limpar Carrinho</button>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    <div id="products-container"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
